@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Predict if there is a anomaly</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+  <div class="container">
+
+    {% if pred: %}
+         <p>Result: {{pred}}</p>
+    {% endif %}
+
+    <br><br>
+
+    <div class="jumbotron text-center">
+      <h1>Check your ECG </h1>
+    </div>
+
+    <br><br>
+
+    <form action="/getresult" method="POST">
+        <input type="submit" value="get Result">    <!-- input 1 !-->
+
+        <br><br>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" value="40"> <!-- input 2 !-->
+
+        <br><br>
+
+        <label for="sex">sex (0-male,1-female)</label>
+        <input type="number" name="sex" id="sex" value="1">  <!-- input 3 !-->
+
+        <br><br>
+
+        <label for="height">height</label>
+        <input type="number" name="height" id="height" value="180"> <!-- input 4 !-->
+
+        <br><br>
+
+        <label for="weight">weight</label>
+        <input type="number" name="weight" id="weight" value="4"> <!-- input 5 !-->
+
+        <br><br>
+
+        <label for="QRS_duration">QRS_duration</label>
+        <input type="number" name="QRS_duration" id="QRS_duration" value="85"> <!-- input 6 !-->
+
+        <br><br>
+
+        <label for="PR">PR</label>  <!-- input 7 !-->
+        <input type="number" name="PR" id="PR" value="174">
+
+        <br><br>
+
+        <label for="QT">QT</label>          <!-- input 8 !-->
+        <input type="number" name="QT" id="QT" value="400">
+
+        <br><br>
+
+        <label for="T">T</label>    <!-- input 9 !-->
+        <input type="number" name="T" id="T" value="150">
+
+        <br><br>
+
+        <label for="P">P</label>    <!-- input 10 !-->
+        <input type="number" name="P" id="P" value="39">
+
+        <br><br>
+
+        <label for="aQRS">aQRS</label>  <!-- input 11 !-->
+        <input type="number" name="aQRS" id="aQRS" value="39">
+
+        <br><br>
+
+        <label for="aT">aT</label>  <!-- input 12 !-->
+        <input type="number" name="aT" id="aT" value="39">
+
+        <br><br>
+
+        <label for="aP">aP</label>  <!-- input 13 !-->
+        <input type="number" name="aP" id="aP" value="39">
+
+        <br><br>
+
+        <label for="aQRST">aQRST</label>    <!-- input 14 !-->
+        <input type="number" name="aQRST" id="aQRST" value="25">
+
+        <br> <br>
+
+        <label for="J">J</label>    <!-- input 15 !-->
+        <input type="number" name="J" id="J" value="53">
+
+        <br> <br>
+
+        <label for="heart_rate">heart_rate</label>  <!-- input 16 !-->
+        <input type="number" name="heart_rate" id="heart_rate" value="60">
+
+        <br> <br>
+
+        <label for="wQ">wQ</label>  <!-- input 17 !-->
+        <input type="number" name="wQ" id="wQ" value="25">
+
+        <br> <br>
+
+        <label for="wR">wR</label>  <!-- input 18 !-->
+        <input type="number" name="wR" id="wR" value="25">
+
+        <br> <br>
+
+        <label for="wS">wS</label>  <!-- input 19 !-->
+        <input type="number" name="wS" id="wS" value="25">
+
+        <br> <br>
+
+        <label for="wR_">wR_</label>    <!-- input 20 !-->
+        <input type="number" name="wR_" id="wR_" value="25">
+
+        <br> <br>
+
+        <label for="IntrinsicDeflections">IntrinsicDeflections</label>  <!-- input 21 !-->
+        <input type="number" name="IntrinsicDeflections" id="IntrinsicDeflections" value="39">
+
+        <br><br>
+
+        <label for="QRSA">QRSA</label> <!-- input 22 !-->
+        <input type="number" name="QRSA" id="QRSA" value="25">
+
+        <br> <br>
+
+        <label for="QRSTA">QRSTA</label>
+        <input type="number" name="QRSTA" id="QRSTA" value="25">
+
+        <br> <br>
+
+
+
+
+
+
+
+    </form>
+
+  </div>
+</body>
+
+</html>
+
