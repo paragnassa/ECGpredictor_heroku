@@ -1,5 +1,5 @@
-# ecgpred_heroku
-ISE 589-4 Course Project :
+# eECGpred_heroku
+UCS757 Building Innovative Project Course Project :
 A very simple app using python-flask and machine learning to predict if your ECG is an anomaly 
 or not.
 
