@@ -1,0 +1,3 @@
+#!/media/idukkigold/WORK/NCSU/Fall 18/ISE 589-004/Project/AWS/test/test/bin/python
+from numba.pycc import main
+main()
